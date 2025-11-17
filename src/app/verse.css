@@ -1,15 +1,62 @@
 h1 {
   font-size: calc(var(--verse-spacing) * 2);
+  line-height: calc(var(--verse-spacing) * 2.8); /* 1.4 ratio */
   font-weight: 600;
   letter-spacing: -0.025em;
   margin-bottom: calc(var(--verse-spacing) * 1);
   @apply text-(--muted-900) dark:text-(--muted-100);
 }
 
-p {
+h2 {
+  font-size: calc(var(--verse-spacing) * 1.5);
+  line-height: calc(var(--verse-spacing) * 2.4); /* 1.6 ratio */
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  margin-top: calc(var(--verse-spacing) * 2);
+  margin-bottom: calc(var(--verse-spacing) * 0.75);
+  @apply text-(--muted-900) dark:text-(--muted-100);
+}
+
+h3 {
+  font-size: calc(var(--verse-spacing) * 1.25);
+  line-height: calc(var(--verse-spacing) * 2); /* 1.6 ratio */
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  margin-top: calc(var(--verse-spacing) * 1.5);
+  margin-bottom: calc(var(--verse-spacing) * 0.5);
+  @apply text-(--muted-900) dark:text-(--muted-100);
+}
+
+ul,
+ol {
   margin-bottom: calc(var(--verse-spacing) * 1);
-  line-height: calc(var(--verse-spacing) * 1.5);
-  font-size: calc(var(--verse-spacing) * 1);
+  padding-left: calc(var(--verse-spacing) * 1.5);
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+li {
+  font-size: calc(var(--verse-spacing) * 1.125);
+  line-height: calc(var(--verse-spacing) * 2); /* 1.78 ratio */
+  margin-bottom: calc(var(--verse-spacing) * 0.5);
+  @apply text-(--muted-700) dark:text-(--muted-300) marker:text-(--muted-500);
+}
+
+strong {
+  font-weight: 600;
+  @apply text-(--muted-900) dark:text-(--muted-100);
+}
+
+p {
+  font-size: calc(var(--verse-spacing) * 1.125);
+  line-height: calc(var(--verse-spacing) * 2); /* 1.78 ratio */
+  margin-bottom: calc(var(--verse-spacing) * 1);
   @apply text-(--muted-700) dark:text-(--muted-300);
 }
 
