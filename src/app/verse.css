@@ -1,0 +1,70 @@
+h1 {
+  font-size: calc(var(--verse-spacing) * 2);
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  margin-bottom: calc(var(--verse-spacing) * 1);
+  @apply text-(--muted-900) dark:text-(--muted-100);
+}
+
+p {
+  margin-bottom: calc(var(--verse-spacing) * 1);
+  line-height: calc(var(--verse-spacing) * 1.5);
+  font-size: calc(var(--verse-spacing) * 1);
+  @apply text-(--muted-700) dark:text-(--muted-300);
+}
+
+@utility verse-gray {
+  --muted-50: var(--color-gray-50);
+  --muted-100: var(--color-gray-100);
+  --muted-200: var(--color-gray-200);
+  --muted-300: var(--color-gray-300);
+  --muted-400: var(--color-gray-400);
+  --muted-500: var(--color-gray-500);
+  --muted-600: var(--color-gray-600);
+  --muted-700: var(--color-gray-700);
+  --muted-800: var(--color-gray-800);
+  --muted-900: var(--color-gray-900);
+  --muted-950: var(--color-gray-950);
+}
+
+@utility verse-zinc {
+  --muted-50: var(--color-zinc-50);
+  --muted-100: var(--color-zinc-100);
+  --muted-200: var(--color-zinc-200);
+  --muted-300: var(--color-zinc-300);
+  --muted-400: var(--color-zinc-400);
+  --muted-500: var(--color-zinc-500);
+  --muted-600: var(--color-zinc-600);
+  --muted-700: var(--color-zinc-700);
+  --muted-800: var(--color-zinc-800);
+  --muted-900: var(--color-zinc-900);
+  --muted-950: var(--color-zinc-950);
+}
+
+@utility verse-stone {
+  --muted-50: var(--color-stone-50);
+  --muted-100: var(--color-stone-100);
+  --muted-200: var(--color-stone-200);
+  --muted-300: var(--color-stone-300);
+  --muted-400: var(--color-stone-400);
+  --muted-500: var(--color-stone-500);
+  --muted-600: var(--color-stone-600);
+  --muted-700: var(--color-stone-700);
+  --muted-800: var(--color-stone-800);
+  --muted-900: var(--color-stone-900);
+  --muted-950: var(--color-stone-950);
+}
+
+@utility verse-neutral {
+  --muted-50: var(--color-neutral-50);
+  --muted-100: var(--color-neutral-100);
+  --muted-200: var(--color-neutral-200);
+  --muted-300: var(--color-neutral-300);
+  --muted-400: var(--color-neutral-400);
+  --muted-500: var(--color-neutral-500);
+  --muted-600: var(--color-neutral-600);
+  --muted-700: var(--color-neutral-700);
+  --muted-800: var(--color-neutral-800);
+  --muted-900: var(--color-neutral-900);
+  --muted-950: var(--color-neutral-950);
+}
