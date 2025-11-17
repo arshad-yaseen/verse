@@ -2,69 +2,103 @@ import Markdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
 const markdown = `
-# The Art of Modern Web Development
+# Building Products That Matter: A Developer's Journey
 
-Welcome to a journey through the evolving landscape of web development. In this post, we'll explore the tools, techniques, and philosophies that shape how we build for the web today.
+After a decade of building software, I've learned that the best products aren't born from perfect code—they emerge from deep empathy, relentless iteration, and a willingness to be wrong. This is what I wish I knew when I started.
 
-## Why Typography Matters
+![A developer working at their desk with multiple monitors](https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200&h=600&fit=crop)
 
-Good typography is the foundation of readable content. It's not just about choosing a pretty font—it's about creating a hierarchy that guides readers through your content naturally. Learn more about [typography best practices](https://practicaltypography.com/).
+## The Myth of the Perfect Stack
 
-### The Power of Spacing
+We obsess over choosing the "right" framework, the "best" database, the most "scalable" architecture. But here's the truth: **the stack doesn't matter nearly as much as you think**. What matters is shipping something people actually want to use.
 
-Spacing creates breathing room. It gives your content structure and makes complex ideas digestible. Consider these key principles:
+I've seen beautiful, over-engineered systems that nobody used, and I've seen "hacky" prototypes that changed industries. The difference? One team was building for users, the other was building for themselves.
 
-- **Vertical rhythm** keeps your content flowing smoothly
-- **Consistent margins** create visual harmony
-- **Thoughtful padding** provides comfortable reading zones
+### Start With Why
 
-## Code in Context
+Before you write a single line of code, ask yourself:
 
-When we write about code, we need to show it clearly. Here's a simple example using [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript):
+- Who is this for?
+- What problem does it solve?
+- Why does this matter *right now*?
+- How will I know if it's working?
+
+These questions are uncomfortable. They force you to confront whether your idea is actually solving a real problem or just scratching a personal itch.
+
+## The Power of Constraints
+
+Early in my career, I thought more resources meant better products. I was wrong. Some of my best work happened when I had:
+
+1. **Limited time** – Forces you to focus on what truly matters
+2. **Small teams** – Enables fast decisions and clear communication  
+3. **Tight budgets** – Demands creative solutions over expensive ones
+4. **Clear scope** – Prevents feature creep and endless pivots
+
+> "Perfection is achieved not when there is nothing more to add, but when there is nothing left to take away."  
+> — Antoine de Saint-Exupéry
+
+## Writing Code That Lasts
+
+The best code I've written isn't the cleverest—it's the most *boring*. Here's what maintainable code looks like:
 
 \`\`\`javascript
-const greeting = "Hello, World!";
-console.log(greeting);
+function calculateTotal(items) {
+  return items.reduce((sum, item) => sum + item.price, 0);
+}
+
+const calcTotal = items => items.reduce((s, {price: p}) => s + p, 0);
 \`\`\`
 
-Inline code like \`const x = 42\` should be easy to spot but not distracting.
+Your future self (and your teammates) will thank you for choosing clarity over cleverness. Use descriptive names like \`getUserById()\` instead of \`get()\`. Write comments that explain *why*, not *what*.
 
-> "Design is not just what it looks like and feels like. Design is how it works."
-> — Steve Jobs
+## Learning From Failure
 
-## Building for Everyone
+![A path through a forest representing the journey of learning](https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1200&h=600&fit=crop)
 
-Modern web development isn't just about making things work—it's about making them work for *everyone*. [Accessibility](https://www.w3.org/WAI/), [performance](https://web.dev/performance/), and user experience are not optional extras; they're fundamental requirements.
+My biggest failures taught me more than my successes ever could. That product I spent six months building that got zero users? It taught me to validate ideas before building. That "temporary" hack that became permanent? It taught me that ~~shortcuts~~ technical debt compounds faster than you think.
 
-### Key Considerations
+**Failure isn't the opposite of success—it's part of the process.** The teams that ship great products aren't the ones that never fail; they're the ones that fail fast, learn quickly, and iterate relentlessly.
 
-1. **Semantic HTML** provides meaning and structure
-2. **Progressive enhancement** ensures baseline functionality
-3. **Responsive design** adapts to any screen size
-4. **Performance budgets** keep your site fast
+### Embrace the Feedback Loop
 
-## Visual Examples
+The faster you can get your work in front of real users, the faster you'll learn what actually matters. This means:
 
-![A beautiful sunset over mountains](https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=400&fit=crop)
+- Ship early, even when it's embarrassing
+- Talk to users *constantly*
+- Measure what matters, ignore vanity metrics
+- Be willing to kill your darlings
 
-## Tables in Action
+## The Human Side of Code
 
-Here's how data looks when properly structured:
+We don't build software in a vacuum. Every line of code affects real people—your users, your teammates, your future self. Consider the impact:
 
-| Feature | Description | Priority |
-|---------|-------------|----------|
-| Accessibility | Ensure content is available to all users | High |
-| Performance | Keep load times under 3 seconds | High |
-| Responsive | Adapt to all screen sizes | Medium |
-| SEO | Optimize for search engines | Medium |
+| Stakeholder | What They Need | How We Deliver |
+|-------------|----------------|----------------|
+| Users | Fast, intuitive experiences | Performance optimization, user testing |
+| Teammates | Clear, maintainable code | Documentation, code reviews |
+| Business | Reliable, scalable systems | Monitoring, testing, architecture |
+| Future You | Context and reasoning | Comments, commit messages, ADRs |
 
-## Looking Forward
+## Resources That Changed My Thinking
 
-The web ~continues~ to evolve, and so do we. By focusing on fundamentals—clean code, thoughtful design, and user-centered thinking—we can build experiences that stand the test of time. Check out [MDN Web Docs](https://developer.mozilla.org/) for comprehensive web development resources.
+Over the years, certain resources have fundamentally shifted how I approach building software:
+
+- [The Pragmatic Programmer](https://pragprog.com/titles/tpp20/) – Timeless wisdom on software craftsmanship
+- [Shape Up](https://basecamp.com/shapeup) – Rethinking how we plan and build products
+- [Working in Public](https://press.stripe.com/working-in-public) – Understanding open source dynamics
+- [Refactoring UI](https://www.refactoringui.com/) – Design principles for developers
+
+## Moving Forward
+
+The web platform is more powerful than ever. We have [incredible tools](https://developer.mozilla.org/), [amazing frameworks](https://nextjs.org/), and a community that shares knowledge freely. But tools are just tools—what matters is what we build with them.
+
+Focus on the fundamentals: *write clear code, ship often, listen to users, and never stop learning*. The rest is just details.
 
 ---
 
-**Remember:** The best code is code that serves its users well.
+**The best time to start was yesterday. The second best time is now.**
+
+What will you build today?
 `;
 
 export default function Home() {
